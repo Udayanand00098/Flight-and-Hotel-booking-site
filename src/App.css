@@ -1,0 +1,71 @@
+/* App.css */
+.app {
+  display: flex;
+  flex-direction: column; /* Display boxes vertically */
+  justify-content: center; /* Center align the boxes horizontally */
+  align-items: center; /* Center align the boxes vertically */
+  height: 100vh; /* Make sure the container covers the full viewport height */
+}
+
+.box {
+  position: relative;
+  width: 80%; /* Set the width to 80% of the container */
+  height: 40vh; /* Set the height of each box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease;
+}
+
+.flight {
+  background-size: cover;
+  background-position: center;
+  background-size: 120%; /* Increase image size */
+}
+
+.hotel {
+  background-size: cover;
+  background-position: center;
+  background-size: 120%; /* Increase image size */
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+.content h2 {
+  margin-bottom: 10px;
+  color: #fff; /* White color for heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text */
+}
+
+.content p {
+  margin-bottom: 20px;
+  color: #fff; /* White color for text */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow to text */
+}
+
+.bookButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bookButton:hover {
+  background-color: #0056b3;
+}
+
+.box:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
